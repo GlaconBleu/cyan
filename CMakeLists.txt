@@ -10,7 +10,7 @@ project (cyan)
 set (cyan_VERSION_MAJOR 0)
 set (cyan_VERSION_MINOR 1)
 set (cyan_VERSION_PATCH 1)
-set (cyan_VERSION_STRING
+set (cyan_VERSION
 	${cyan_VERSION_MAJOR}.${cyan_VERSION_MINOR}.${cyan_VERSION_PATCH} )
 
 set( CMAKE_LIBRARY_PATH ${CMAKE_LIBRARY_PATH} /lib /usr/lib /usr/local/lib )
@@ -85,7 +85,7 @@ file( GLOB hdr_common  "include/cyan/common/*.h"  )
 
 add_library( "cyan" SHARED ${src} ) 
 
-set_target_properties(cyan PROPERTIES VERSION ${cyan_VERSION_STRING}
+set_target_properties(cyan PROPERTIES VERSION ${cyan_VERSION}
                                     SOVERSION ${cyan_VERSION_MAJOR})
 
 ### Linking
