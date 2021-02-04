@@ -20,7 +20,7 @@ msgstr ""
 
 #: /home/seb/devel/cyan/src/common/error.c:36
 msgid "Could not open/read or write file. Oops."
-msgstr ""
+msgstr "Ой. Не смог открыть / прочитать или записать файл"
 
 #: /home/seb/devel/cyan/src/common/error.c:32
 msgid "Given argument is invalid or has wrong value"
@@ -28,11 +28,11 @@ msgstr "Данный параметр недействителен или име
 
 #: /home/seb/devel/cyan/src/common/error.c:28
 msgid "Memory allocation failed"
-msgstr "ыделение памяти не удалось"
+msgstr "Выделение памяти не удалось"
 
 #: /home/seb/devel/cyan/src/common/error.c:26
 msgid "NOPE"
-msgstr ""
+msgstr "НЕТ! никак!"
 
 #: /home/seb/devel/cyan/src/common/error.c:30
 msgid "NULL pointer was given"
@@ -44,19 +44,19 @@ msgstr "OK"
 
 #: /home/seb/devel/cyan/src/common/error.c:42
 msgid "Plugin could not be loaded"
-msgstr ""
+msgstr "Плагин не удалось загрузить"
 
 #: /home/seb/devel/cyan/src/common/error.c:34
 msgid "Sorry ... this is not implemented yet :("
-msgstr "звините ... это ещё не реализовано :("
+msgstr "Извините ... это ещё не реализовано :("
 
 #: /home/seb/devel/cyan/src/common/error.c:40
 msgid "Structure is empty"
-msgstr ""
+msgstr "Структура пустая"
 
 #: /home/seb/devel/cyan/src/common/error.c:38
 msgid "Structure is full"
-msgstr ""
+msgstr "Структура полностью заполнена"
 
 #: /home/seb/devel/cyan/src/common/error.c:44
 msgid "Unknown error"

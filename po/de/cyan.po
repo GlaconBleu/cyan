@@ -19,7 +19,7 @@ msgstr ""
 
 #: /home/seb/devel/cyan/src/common/error.c:36
 msgid "Could not open/read or write file. Oops."
-msgstr ""
+msgstr "Konnte Datei nicht öffnen/lesen oder schreiben. Hoppala!"
 
 #: /home/seb/devel/cyan/src/common/error.c:32
 msgid "Given argument is invalid or has wrong value"
@@ -31,7 +31,7 @@ msgstr "Speicherzuweisung fehlgeschlagen"
 
 #: /home/seb/devel/cyan/src/common/error.c:26
 msgid "NOPE"
-msgstr ""
+msgstr "NEIN ! Nie im Leben !"
 
 #: /home/seb/devel/cyan/src/common/error.c:30
 msgid "NULL pointer was given"
@@ -43,7 +43,7 @@ msgstr "OK"
 
 #: /home/seb/devel/cyan/src/common/error.c:42
 msgid "Plugin could not be loaded"
-msgstr ""
+msgstr "Plugin konnte nicht geladen werden"
 
 #: /home/seb/devel/cyan/src/common/error.c:34
 msgid "Sorry ... this is not implemented yet :("
@@ -51,11 +51,11 @@ msgstr "Entschuldigung ... das ist noch nicht implementiert :("
 
 #: /home/seb/devel/cyan/src/common/error.c:40
 msgid "Structure is empty"
-msgstr ""
+msgstr "Struktur ist leer"
 
 #: /home/seb/devel/cyan/src/common/error.c:38
 msgid "Structure is full"
-msgstr ""
+msgstr "Struktur ist voll"
 
 #: /home/seb/devel/cyan/src/common/error.c:44
 msgid "Unknown error"
