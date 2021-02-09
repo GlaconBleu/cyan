@@ -7,7 +7,6 @@
  
 # Tell the user project where to find our headers and libraries
 
-FIND_PACKAGE_MESSAGE(cyan "Found cyan @cyan_VERSION_STRING@" "[${CYAN_LIBRARY}][${CYAN_INCLUDE_DIR}]" )
 
 set(CYAN_VERSION_MAJOR  @cyan_VERSION_MAJOR@)
 set(CYAN_VERSION_MINOR  @cyan_VERSION_MINOR@)
@@ -18,5 +17,7 @@ set(CYAN_INCLUDE_DIR "@INSTALL_HEADERS_PATH@" )
 set(CYAN_LIBRARY_DIR "@INSTALL_LIB_PATH@")
 set(CYAN_DATASETS_DIR "@INSTALL_DATASETS_PATH@")
 set(CYAN_LIBRARY    cyan )
+
+message(STATUS "Found cyan @cyan_VERSION@"  )
 
 mark_as_advanced( CYAN_INCLUDE_DIR CYAN_LIBRARY_DIR CYAN_LIBRARY ) 

@@ -21,7 +21,7 @@ set ( INSTALL_BIN_PATH bin )
 set ( INSTALL_LIB_PATH lib )
 set ( INSTALL_AR_PATH  lib )
 set ( INSTALL_HEADERS_PATH include )
-set ( INSTALL_DATASETS_PATH share/cyan/datasets )
+set ( INSTALL_DATASETS_PATH "${CMAKE_INSTALL_PREFIX}/share/cyan/datasets" )
 
 ### Options ###
 
