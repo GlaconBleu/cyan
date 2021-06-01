@@ -39,6 +39,10 @@ else()
     set ( CYAN_CFG_VERBOSE_ERRORS 0)
 endif()
 
+### LIBS
+
+find_package(libzip REQUIRED)
+
 ### Search for gettext
 
 if (ENABLE_GETTEXT)
@@ -72,7 +76,8 @@ file( GLOB src  "src/*.c"
                 "src/color/*.c"
                 "src/common/*.c" 
                 "src/image/*.c"
-                "src/file/*.c" )
+                "src/file/*.c" 
+                "src/utils/*.c" )
 
 file( GLOB hdr         "include/cyan/*.h"  )
 file( GLOB hdr_image   "include/cyan/image/*.h"  )
@@ -80,6 +85,7 @@ file( GLOB hdr_color   "include/cyan/color/*.h"  )
 file( GLOB hdr_vision  "include/cyan/vision/*.h"  )
 file( GLOB hdr_3dmodel "include/cyan/3dmodel/*.h"  )
 file( GLOB hdr_common  "include/cyan/common/*.h"  )
+file( GLOB hdr_utils   "include/cyan/utils/*.h"  )
 
 ### Targets
 
@@ -94,6 +100,8 @@ target_link_libraries( "cyan" "m" )
 if (LIBNETPBM_FOUND)
     target_link_libraries( "cyan" ${LIBTIRPC_LIBRARY} )
 endif()
+
+target_link_libraries("cyan" libzip::zip )
 
 ### Cmake file
 
@@ -131,6 +139,10 @@ install( FILES ${hdr_3dmodel}
 
 install( FILES ${hdr_common}
 	    DESTINATION ${INSTALL_HEADERS_PATH}/cyan/common/${name}
+	    COMPONENT main )
+
+install( FILES ${hdr_utils}
+	    DESTINATION ${INSTALL_HEADERS_PATH}/cyan/utils/${name}
 	    COMPONENT main )
 
 # Datasets
